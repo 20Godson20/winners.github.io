@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Северное Сияние</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <a href="#" class="logo-container">
+            <img src="logo.png" alt="Logo" class="logo-img">
+        </a>
+        <nav class="navbar">
+            <a href="#">Tactics</a>
+            <a href="#">Bases</a>
+            <a href="#">Support</a>
+            <a href="#">About us</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn login-btn">Log In</button>
+            <button class="btn join-btn">Join Us</button>
+        </div>
+    </header>
+
+<!-- Переключение новостей -->
+<div class="news-switch">
+    <button class="switch-btn active" data-news="game">Game News</button>
+    <button class="switch-btn" data-news="clan">Clan News</button>
+</div>
+
+<!-- Новости -->
+<div class="news-section">
+    <div id="game-news" class="news-container active">
+        <h2 class="news-title">Game News</h2>
+        <div class="news-cards">
+            </div>
+        </div>        
+    </div>
+
+    <div id="clan-news" class="news-container hidden">
+        <h2 class="news-title">Clan News</h2>
+        <div class="news-cards">
+            <div class="card">
+                <h3>Заголовок клановой новости</h3>
+                <p>Описание клановой новости...</p>
+            </div>
+            <div class="card">
+                <h3>Еще одна новость клана</h3>
+                <p>Описание второй новости...</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Анимация и скрипты -->
+        <div class="aurora"></div>
+        <script src="scripts.js"></script>
+        <script src="server.js"></script>
+    </body>
+</html>
